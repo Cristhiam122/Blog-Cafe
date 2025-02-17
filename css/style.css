@@ -88,7 +88,7 @@ img {
 }
 .header {
     background-image: url(../img/banner.jpg);
-    height: 60rem;
+    height: 30rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -201,4 +201,14 @@ footer {
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+/* SOBRE NOSOTROS */
+@media (min-width: 768PX) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
 }
