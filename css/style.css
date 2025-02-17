@@ -52,6 +52,10 @@ h4 {
     font-size: 2.8rem;
 }
 
+p {
+    text-align: justify;
+}
+
 img {
     max-width: 100%;
 }
@@ -99,7 +103,9 @@ img {
     color: var(--blanco);
     margin-top: 5rem;
 }
-
+.header__texto>p{
+    text-align: center;
+}
 .barra {
     padding-top: 1rem;
 }
@@ -211,4 +217,23 @@ footer {
         column-gap: 2rem;
     }
 
+}
+
+/* CURSO */
+
+@media (min-width: 768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type {
+    border: none;
 }
