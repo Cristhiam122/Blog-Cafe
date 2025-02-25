@@ -26,7 +26,7 @@ body {
 /** Globales **/
 
 .contenedor {
-    width: min(90%, 120rem);
+    width: min(70%, 100rem);
     margin: 0 auto;
 }
 
@@ -40,16 +40,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 3.8rem;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h3 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
 }
 h4 {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
+    text-align: left;
 }
 
 p {
@@ -90,9 +91,16 @@ img {
         gap: 2rem;
     }
 }
-.header {
+
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp .header{
     background-image: url(../img/banner.jpg);
-    height: 30rem;
+}	
+.header {
+    height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -101,7 +109,7 @@ img {
 .header__texto {
     text-align: center;
     color: var(--blanco);
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 .header__texto>p{
     text-align: center;
